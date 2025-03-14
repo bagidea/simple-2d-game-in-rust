@@ -1,4 +1,11 @@
-use bevy::{ecs::component::Component, math::Vec3, time::{Timer, TimerMode}};
+use bevy::{
+    ecs::component::Component,
+    math::Vec3,
+    time::{
+        Timer,
+        TimerMode
+    }
+};
 
 #[derive(Component)]
 pub struct Player; 

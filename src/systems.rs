@@ -1,5 +1,40 @@
-use crate::{components::{Bullet, Enemy, Explosion, ExplosionAnimationTime, ExplosionColor, ExplosionTimer, ExplosionToSpawn, Movable, Player, Velocity}, EnemySpawnTimer, GameColors, GameShapes, WinSize, BASE_SPEED, BULLET_SCALE, ENEMY_SCALE, TIME_STEP};
-use bevy::{core_pipeline::{bloom::Bloom, tonemapping::Tonemapping}, math::bounding::{Aabb2d, IntersectsVolume}, prelude::*, sprite::AlphaMode2d, utils::hashbrown::HashSet, window::PrimaryWindow};
+use crate::{
+    components::{
+        Bullet,
+        Enemy,
+        Explosion,
+        ExplosionAnimationTime,
+        ExplosionColor,
+        ExplosionTimer,
+        ExplosionToSpawn,
+        Movable,
+        Player,
+        Velocity
+    },
+    EnemySpawnTimer,
+    GameColors,
+    GameShapes,
+    WinSize,
+    BASE_SPEED,
+    BULLET_SCALE,
+    ENEMY_SCALE,
+    TIME_STEP
+};
+
+use bevy::{
+    core_pipeline::{
+        bloom::Bloom,
+        tonemapping::Tonemapping
+    },
+    math::bounding::{
+        Aabb2d,
+        IntersectsVolume
+    },
+    prelude::*,
+    sprite::AlphaMode2d,
+    utils::hashbrown::HashSet,
+    window::PrimaryWindow
+};
 
 pub struct SystemPlugin;
 

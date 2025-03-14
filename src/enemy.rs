@@ -1,6 +1,22 @@
-use crate::{components::{Enemy, Movable, Velocity}, EnemySpawnTimer, GameColors, GameShapes, WinSize};
+use crate::{
+    components::{
+        Enemy,
+        Movable,
+        Velocity
+    },
+    EnemySpawnTimer,
+    GameColors,
+    GameShapes,
+    WinSize
+};
+
 use bevy::prelude::*;
-use rand::{rng, rngs::ThreadRng, Rng};
+
+use rand::{
+    rng,
+    rngs::ThreadRng,
+    Rng
+};
 
 pub struct EnemyPlugin;
 

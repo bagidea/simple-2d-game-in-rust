@@ -1,4 +1,15 @@
-use crate::{components::{Bullet, Movable, Player, Velocity}, GameColors, GameShapes, WinSize};
+use crate::{
+    components::{
+        Bullet,
+        Movable,
+        Player,
+        Velocity
+    },
+    GameColors,
+    GameShapes,
+    WinSize
+};
+
 use bevy::prelude::*;
 
 pub struct PlayerPlugin;
